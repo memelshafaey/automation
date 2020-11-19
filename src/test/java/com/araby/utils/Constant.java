@@ -19,8 +19,8 @@ public class Constant {
 	public static final String DEFAULT_SENDER = EG_WE_SENDER;
 	
 	public static final long TEST_TIMEOUT = 600000;
-	//public static final String DEFAULT_LANDING = "https://staging-uri.araby.deals/ar-EG/";
-	public static final String DEFAULT_LANDING = "https://www.google.com/";
+	public static final String DEFAULT_LANDING = "https://staging-uri.araby.deals/ar-EG/";
+	//public static final String DEFAULT_LANDING = "https://www.google.com/";
 	public static final int TEST_INTERVAL = 10000;
 
 }
