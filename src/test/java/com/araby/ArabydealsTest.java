@@ -124,9 +124,8 @@ public class ArabydealsTest {
 	@Test(priority = 6)
 	public void checkStoreIdURL() {
 		// store click url
-		driver.findElement(By.cssSelector(
-				"body > div.container-fluid > div > div.col-xl-3.col-lg-3.col-md-3.col-sm-3.col-xs-12.d-none.d-sm-block > div.side-stores > ul > li:nth-child(3) > a"))
-				.click();
+		driver.findElement(By.id("storesDropDown")).click();
+		driver.findElement(By.cssSelector(".stores > .dropdown-item:nth-child(1)")).click();
 
 		Assert.assertEquals(checkURL("/stores?st="), true, "Store ID URL is not correct");
 	}
