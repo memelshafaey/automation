@@ -52,12 +52,6 @@ public class ArabydealsTest {
 		login_Btn.click();
 	}
 
-	public void logout() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.findElement(By.linkText("اهلاَ 201144383361")).click();
-		driver.findElement(By.linkText("تسجيل الخروج")).click();
-	}
-
 	@Test(priority = 2)
 	public void homePageTitle() throws InterruptedException {
 		String expectedTitle;
@@ -181,22 +175,33 @@ public class ArabydealsTest {
 		}
 
 	}
-
-	@Test(priority = 11)
-	public void loginPopUp() throws InterruptedException {
+	
+	public void logout() throws InterruptedException {
+		Thread.sleep(5000);
+		driver.findElement(By.linkText("اهلاَ 201144383361")).click();
+		driver.findElement(By.linkText("تسجيل الخروج")).click();
+	}
+// if user is logout
+//	@Test(priority = 11)
+	public void forgotPassword() throws InterruptedException {
 
 		// wait 5 seconds
 		Thread.sleep(5000);
-
 		// click on sign button
 		driver.findElement(By.cssSelector(".d-none > .btn")).click();
 		Thread.sleep(3000);
-		// forget password button
+		// forgot password button
 		driver.findElement(By.cssSelector(".forgetBtn > a")).click();
+		
+		// select country
+		driver.findElement(By.id("selectedCountry")).click();
+		driver.findElement(By.id(""));
+		driver.findElement(By.id("phoneNumberInput")).sendKeys("01022113600");
 
 		// resend password
 		driver.findElement(By.cssSelector(".btn_resendPassword")).click();
 
 	}
+	
 
 }
