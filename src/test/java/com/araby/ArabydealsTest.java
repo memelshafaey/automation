@@ -40,13 +40,13 @@ public class ArabydealsTest {
 		// enter user name
 		WebElement username_Input = driver.findElement(By.id("usernameInput"));
 		username_Input.click();
-		username_Input.sendKeys(Constant.EG_MOBINIL_TESTNUMBER);
+		username_Input.sendKeys(Constant.EG_VODAPHONE_TESTNUMBER);
 
 		Thread.sleep(4000);
 		// enter password
 		WebElement password_Input = driver.findElement(By.id("passwordInput"));
 		password_Input.click();
-		password_Input.sendKeys("2795");
+		password_Input.sendKeys("6016");
 
 		WebElement login_Btn = driver.findElement(By.id("loginBtn"));
 		login_Btn.click();
