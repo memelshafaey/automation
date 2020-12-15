@@ -46,7 +46,7 @@ public class ArabydealsTest {
 		// enter password
 		WebElement password_Input = driver.findElement(By.id("passwordInput"));
 		password_Input.click();
-		password_Input.sendKeys("6016");
+		password_Input.sendKeys("5813");
 
 		WebElement login_Btn = driver.findElement(By.id("loginBtn"));
 		login_Btn.click();
